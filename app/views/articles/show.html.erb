@@ -1,12 +1,15 @@
-<h1>Show current article</h1>
-<p>Title:</p>
-<p><%= @article.title %></p>
+<div class = 'jumbotron'>
+  <h1>Show current article</h1>
+  <p class= 'title'>Title:</p>
+  <p><%= @article.title %></p>
+  
+  <p class= 'title'>Description:</p>
+  <p><%= @article.description %></p>
+  
+  <p class= 'title'>Author:</p>
+  <p><%= @article.author %></p>
 
-<p>Description:</p>
-<p><%= @article.description %></p>
-
-<p>Author:</p>
-<p><%= @article.author %></p>
+</div>
 <%= link_to 'Edit current article', edit_article_path(@article) %> </br>
 <%= link_to 'Show all articles', articles_path %> </br>
 <%= link_to 'Create new article', new_article_path %> </br>
