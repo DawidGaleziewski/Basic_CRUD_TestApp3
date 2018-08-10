@@ -1,0 +1,14 @@
+<h1>Show current article</h1>
+<p>Title:</p>
+<p><%= @article.title %></p>
+
+<p>Description:</p>
+<p><%= @article.description %></p>
+
+<p>Author:</p>
+<p><%= @article.author %></p>
+<%= link_to 'Edit current article', edit_article_path(@article) %> </br>
+<%= link_to 'Show all articles', articles_path %> </br>
+<%= link_to 'Create new article', new_article_path %> </br>
+<%= link_to 'Go back to homepage', root_path %> </br>
+
